@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Floorplan Layout Tool</title>
+
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+
+	<script src="js/jquery.js"></script>
+	<script src="js/map.js"></script>
+
+</head>
+<body>
+<div id="drawable">
+	<canvas id="mapCanvas" width="800" height="600"></canvas><br>
+</div>
+	<label id="curBooth">Booth: </label><br>
+	<button id="booth1" type="button" onclick="onclick10()">4x10 Booth</button>
+	<button id="booth1" type="button" onclick="onclick15()">4x15 Booth</button>
+	<button id="booth1" type="button" onclick="onclick20()">4x20 Booth</button><br>
+	<label for="sinput">Scale (Px per foot): </label> <input type="number" value=2 id="sinput"><br>
+	<label for="orient">Orientation for drawing Booths:</label>
+	<select id="orient">
+		<option value="horiz">Horizontal Booth</option>
+		<option value="vert">Vertical Booth</option>
+	</select>
+</body>
+</html>
