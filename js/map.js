@@ -21,7 +21,7 @@ $( document ).ready(function()
 		ctx.drawImage(_map,0,0,_map.naturalWidth*scale,600);
 	}
 
-	document.getElementById('curBooth').innerHTML = 'Selected: '.concat(booth1[2], ' Booth');
+	document.getElementById('curBooth').innerHTML = 'Selected: ' + booth1[2] + ' Booth';
 
 
 	$('#sinput').bind('input', function(){
@@ -33,8 +33,8 @@ $( document ).ready(function()
 		var position = $('#mapCanvas').position();
 		//console.log(Math.round(position.left));
 		console.log(e);
-		console.log(e.clientX.toString().concat(", ", position.left.toString(), ", ", $(window).scrollLeft().toString()));
-		console.log(e.clientY.toString().concat(", ", position.top.toString(), ", ", $(window).scrollTop().toString()));
+		console.log(e.clientX.toString() + ", " + position.left.toString() + ", " + $(window).scrollLeft().toString());
+		console.log(e.clientY.toString() +", " + position.top.toString() + ", " + $(window).scrollTop().toString());
 		//console.log(e.clientX - canvas.offsetLeft + $(window).scrollLeft());//Math.round(position.left));
 		//console.log(e.clientY - canvas.offsetTop + $(window).scrollTop());//Math.round(position.top));
 		var posx = e.clientX - canvas.offsetLeft + $(window).scrollLeft();//Math.round(position.left);
@@ -48,16 +48,16 @@ $( document ).ready(function()
 });
 
 function onclick10(){
-	document.getElementById('curBooth').innerHTML = 'Selected: '.concat(booth1[2], ' Booth');
+	document.getElementById('curBooth').innerHTML = 'Selected: ' + booth1[2] + ' Booth';
 	curbooth = 1;
 }
 
 function onclick15(){
-	document.getElementById('curBooth').innerHTML = 'Selected: '.concat(booth2[2], ' Booth');
+	document.getElementById('curBooth').innerHTML = 'Selected: ' + booth2[2] + ' Booth';
 	curbooth = 2;
 }
 
 function onclick20(){
-	document.getElementById('curBooth').innerHTML = 'Selected: '.concat(booth3[2], ' Booth');
+	document.getElementById('curBooth').innerHTML = 'Selected: ' + booth3[2] + ' Booth';
 	curbooth = 3;
 }
